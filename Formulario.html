@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+    Nombre
+    Apellido
+    Direccion
+    Telefono
+    Email
+
+    Legajo
+    Turno
+    Materia
+    Comision
+-->
+<form action="accion.php" method="post" target="_self">
+<Fieldset>
+    <legend>Datos del usuario:</legend>
+    <div>
+    <label for="Nombre">Nombre:</label>
+    <input type="text" id="Nombre" name="Nombre" placeholder="Ingrese su nombre" />
+
+    <label for="Apellido">Apellido:</label>
+    <input type="text" id="Apellido" name="Apellido" placeholder="Ingrese su apellido" />
+    </div>  
+
+    <br>
+    <div>
+    <label for="Direccion">Direccion:</label>
+    <input type="text" id="Direccion" name="Direccion" placeholder="Ingrese la direccion de su casa" />
+
+    <label for="Telefono">Telefono:</label>
+    <input type="text" id="Telefono" name="Telefono" placeholder="Ingrese su numero de Telefono" />
+    </div>
+    <br>
+    <label for="Email">Email:</label>
+    <input type="text" id="Email" name="Email" placeholder="Ingrese su numero direccion de email" />
+    
+</Fieldset>
+
+<fieldset>
+    <legend>Datos de la cursada:</legend>
+    <div>
+    <label for="Legajo">Legajo:</label>
+    <input type="text" id="Legajo" name="Legajo" placeholder="Ingrese su Legajo" />
+
+
+    <label for="Turno">Turno:</label>
+    <select name="seleccionable" id="seleccionable">
+        <option value="Turno mañana">Turno mañana</option>
+        <option value="Turno tarde">Turno tarde</option>
+        <option value="Turno noche">Turno noche</option>
+
+    </select>
+    </div>
+
+    <br>
+    <div>
+        <label for="Materia">Materia:</label>
+        <select name="seleccionable" id="seleccionable">
+            <option value="Laboratorio de computacion">Laboratorio de computacion</option>
+            <option value="Ingles">Ingles</option>
+            <option value="Matematicas">Metematicas</option>
+        </select>
+
+        <label for="Comision">Comision:</label>
+        <select name="seleccionable" id="seleccionable">
+            <option value="1TUP6">1TUP6</option>
+            <option value="1TUP7">1TUP7</option>
+            <option value="1TUP8">1TUP8</option>
+        </select>
+
+        
+    </div>
+</fieldset>
+<br>
+<input type="submit" value="Submit">
+
+</form>
